@@ -90,9 +90,9 @@ Theo mức 0,022 USD/1.000 tin trong bảng zero-shot, nếu áp dụng cùng ch
 
 | Nội dung hỏi AI | AI hỗ trợ | Việc sửa và kiểm chứng |
 |---|---|---|
-| Cách sử dụng Gemini API key và Colab Secrets | Giải thích nơi lưu key và phân biệt key với `base_url` | Kiểm tra cấu hình và chạy thử API |
+| Cách sử dụng Gemini API key và Colab Secrets | Giải thích nơi lưu key và phân biệt key với base_url | Kiểm tra cấu hình và chạy thử API |
 | Hoàn thành TODO 4.1–4.4 | Viết hàm gọi API, tạo prompt, đọc nhãn và phân loại hàng loạt | Chạy bộ kiểm tra giả lập; sửa lỗi thụt lề và thêm kết quả trùng |
-| Lỗi `_run_check` chưa được định nghĩa | Tìm hàm trong ô công cụ của Phần 0 | Chạy lại các ô khởi tạo cần thiết |
-| Lỗi 429 và tham số `minimal` | Giải thích giới hạn API và tham số suy luận không tương thích | Thêm khoảng nghỉ giữa lượt gọi và kiểm tra lại lời gọi Gemini |
+| Lỗi _run_check chưa được định nghĩa | Tìm hàm trong ô công cụ của Phần 0 | Chạy lại các ô khởi tạo cần thiết |
+| Lỗi 429 và tham số minimal | Giải thích giới hạn API và tham số suy luận không tương thích | Thêm khoảng nghỉ giữa lượt gọi và kiểm tra lại lời gọi Gemini |
 | Giải thích câu hỏi và viết báo cáo | Hỗ trợ phân tích, tổng hợp kết quả | Đối chiếu số liệu với output notebook; thay các nhận xét giả định trước đó bằng kết quả thực tế |
 Tôi hiểu rằng model đạt F1 cao trên test thường vẫn có thể thất bại khi cách diễn đạt thay đổi. Tôi cũng học được rằng dùng LLM cần quản lý quota, tham số và độ trễ, không chỉ có API key. Khi so sánh các phương pháp, cần kiểm tra chúng có được đo trên cùng tập dữ liệu và cùng điều kiện hay không.
