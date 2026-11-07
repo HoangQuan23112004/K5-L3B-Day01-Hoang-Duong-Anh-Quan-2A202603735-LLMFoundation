@@ -41,7 +41,7 @@ Gọi `call_openai` với các giá trị temperature 0.0, 0.5, 1.0 và 1.5 sử
 Xem xét kịch bản: 10.000 người dùng hoạt động mỗi ngày, mỗi người thực hiện 3 lần gọi API, mỗi lần trung bình ~350 token.
 
 **Ước tính xem `gpt-6.1-terra` đắt hơn `gpt-6-luna` bao nhiêu lần cho workload này** (giá 11/2026: terra $1.00 / $5.00, luna $0.10 / $0.50 mỗi 1M token input / output):
-> `gpt-6.1-terra` đắt hơn `gpt-6-luna` **đúng 10 lần (10x)**. Cả đơn giá token input ($1.00 so với $0.10) và token output ($5.00 so với $0.50) của terra đều gấp 10 lần luna, nên với bất kỳ tỷ lệ input/output nào trong 350 token, tổng chi phí luôn chênh lệch 10 lần. Ví dụ với 30.000 lượt gọi/ngày (giả sử 150 token input + 200 token output), chi phí của luna chỉ khoảng $3.45/ngày(~$103.5/tháng), trong khi terra tốn tới $34.50/ngày (~$1.035/tháng) — chênh lệch hơn $900 mỗi tháng.
+> `gpt-6.1-terra` đắt hơn `gpt-6-luna` **đúng 10 lần (10x)**. Cả đơn giá token input ($1.00 so với $0.10) và token output ($5.00 so với $0.50) của terra đều gấp 10 lần luna, nên với bất kỳ tỷ lệ input/output nào trong 350 token, tổng chi phí luôn chênh lệch 10 lần. Ví dụ với 30.000 lượt gọi/ngày (giả sử 150 token input + 200 token output), chi phí của luna chỉ khoảng $3.45/ngày, trong khi terra tốn tới $34.50/ngày — chênh lệch hơn $900 mỗi tháng.
 
 **Mô tả một trường hợp mà chi phí cao hơn của `gpt-6.1-terra` là xứng đáng, và một trường hợp `gpt-6-luna` là lựa chọn tốt hơn:**
 > - Xứng đáng dùng `gpt-6.1-terra`: Các tác vụ yêu cầu suy luận đa bước chuyên sâu, phân tích hợp đồng pháp lý / y tế, lập trình sinh mã nguồn phức tạp hoặc trích xuất dữ liệu có cấu trúc từ văn bản nhập nhằng, nơi mà một sai sót nhỏ có thể gây thiệt hại nghiêm trọng.
